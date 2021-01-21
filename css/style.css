@@ -13,3 +13,84 @@ body {
   display: table;
   clear: both;
 }
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+  background-color: rgb(31, 51, 91);
+  overflow: hidden;
+  color: white;
+  height: 80vh;
+}
+header>img {
+  position: absolute;
+  bottom: 0;
+  left: 35%;
+  width: 70%;
+}
+
+nav {
+  position: relative;
+  height: 10vh;
+  font-size: 0.7em;
+  line-height: 10vh;
+  vertical-align: middle;
+}
+nav>img {
+  margin-right: 5%;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+header li {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0.5em;
+}
+header a{
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+nav>img {
+  height: 6vh;
+}
+
+header .container nav {
+  vertical-align: middle;
+}
+
+.banner {
+  position: relative;
+  height: 50vh;
+}
+.banner_content {
+  position: absolute;
+  bottom: 15vh;
+  left: 2%;
+  width: 50%;
+}
+.banner h1 {
+  font-size: 2em;
+  margin-bottom: 3vh;
+}
+
+.button_style {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.green {
+  border-style: none;
+  background-color: rgb(90, 201, 72);
+}
