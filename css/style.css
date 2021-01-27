@@ -1,9 +1,11 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* STANDARD */
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -13,12 +15,23 @@ body {
   display: table;
   clear: both;
 }
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
 
 .container {
   width: 90%;
   margin: 0 auto;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* HEADER */
 header {
   position: relative;
   background-color: rgb(31, 51, 91);
@@ -42,12 +55,6 @@ nav {
 }
 nav>img {
   margin-right: 5%;
-}
-.left {
-  float: left;
-}
-.right {
-  float: right;
 }
 
 header li {
@@ -93,6 +100,7 @@ header .container nav {
 .green {
   border-style: none;
   background-color: rgb(90, 201, 72);
+  color: white;
 }
 
 .grey {
@@ -100,7 +108,8 @@ header .container nav {
   vertical-align: middle;
   background-color: lightgrey;
 }
-.grey .container {
+
+main .grey .container {
   display: inline-block;
   margin: 3vh 0;
   text-align: center;
@@ -154,4 +163,55 @@ main > hr {
 }
 .bottom_dx a {
   color: rgb(9, 37, 140);
+}
+
+/* FOOTER */
+footer {
+  height: 150px;
+}
+
+footer .right {
+  color: grey;
+}
+
+footer h1 {
+  vertical-align: middle;
+  line-height: 100px;
+}
+
+footer ul {
+  margin-top: 20px;
+}
+
+footer li {
+  margin-left: 20px;
+  vertical-align: middle;
+  display: inline-block;
+  text-align: left;
+}
+
+footer .right ul li:nth-child(2) {
+  position: relative;
+  width: 180px;
+  border-bottom: 1px solid grey;
+}
+
+footer i {
+  position: absolute;
+  right: 0;
+  bottom: 1em;
+}
+
+footer .green:first-child {
+  padding: 20px;
+  text-decoration: none;
+}
+
+.fix {
+  position: fixed;
+  right: 12%;
+  bottom: 0;
+  border-radius: 5px 5px 0 0;
+  text-decoration: none;
+  padding: 5px 15px 0 15px;
 }
